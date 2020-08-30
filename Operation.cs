@@ -22,6 +22,11 @@ namespace OperationPlatForm
 			return mathOperation(b1, b2);
 		}
 
+		public static int Run(int b1,  Func<int, int> mathOperation)
+		{
+			return mathOperation(b1);
+		}
+
 		public static bool GreaterThan(int x)
 		{
 			return x> 0; 
