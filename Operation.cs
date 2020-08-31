@@ -8,11 +8,6 @@ namespace OperationPlatForm
 {
 	public class Operation
 	{
-		//declare delegate
-		//public delegate int IntegerOperation(int par1, int par2);
-
-		//public static int Run(int b1, int b2, IntegerOperation mathOperation)
-		//more comments
 		public static int Run(int b1, int b2, Func<int, int, int> mathOperation)
 		{
 			Predicate<int> isOk = GreaterThan;
