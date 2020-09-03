@@ -8,9 +8,11 @@ namespace OperationPlatForm
 {
 	public class Operation
 	{
-		public static int Run(int b1, int b2, Func<int, int, int> mathOperation)
+		public delegate int TwoIntegerOperation(int par1, int par2);
+
+		public static int Run(int runPar1, int runPar2, TwoIntegerOperation twoIntegerOperation)
 		{
-			return mathOperation(b1, b2);
-		}
+			return twoIntegerOperation(runPar1, runPar2);
+		}		
 	}
 }
