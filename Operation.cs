@@ -8,9 +8,7 @@ namespace OperationPlatForm
 {
 	public class Operation
 	{
-		public delegate int TwoIntegerOperation(int par1, int par2);
-
-		public static int Run(int runPar1, int runPar2, TwoIntegerOperation twoIntegerOperation)
+		public static int Run(int runPar1, int runPar2, Func<int, int, int> twoIntegerOperation)
 		{
 			return twoIntegerOperation(runPar1, runPar2);
 		}		
